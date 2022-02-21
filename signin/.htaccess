@@ -1,0 +1,16 @@
+RewriteEngine On
+
+
+RewriteRule ^myProfile?$ profile.php
+RewriteRule ^manageExercise?$ viewExercises.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+[^/])$ $1.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+
+#RewriteRule ^studentDetails/([0-9a-zA-Z]+) studentDetails.php?id=$1 [NC,L]

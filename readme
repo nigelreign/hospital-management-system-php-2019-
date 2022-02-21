@@ -1,0 +1,7 @@
+## to upload files more than a gig
+
+1. open ampps/php-7.1/php.ini
+2. search for ``` post_max_size ``` and ``` upload_max_filesize ```
+
+
+## to activate as student click on the dot after  "Please contact the school ." and login as the admin
